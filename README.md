@@ -125,4 +125,20 @@ Certifique-se de ter o **Java Development Kit (JDK)** instalado em sua máquina.
 
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
+Vamos estruturar o projeto com as seguintes classes:
 
+board (tabuleiro):
+
+Board: Representa o tabuleiro de xadrez, contendo a matriz de peças.
+Position: Representa uma posição no tabuleiro (linha e coluna).
+chess (xadrez): (Subpacote para as peças e regras do xadrez)
+
+ChessPiece: Classe abstrata base para todas as peças de xadrez.
+King, Rook, Bishop, Knight, Queen, Pawn: Classes concretas para cada tipo de peça, implementando suas regras de movimento.
+ChessMatch: Orquestra a partida de xadrez, gerencia o tabuleiro, os jogadores, os turnos e as regras do jogo.
+ChessException: Exceção personalizada para erros do xadrez.
+ChessPosition: Representa uma posição de xadrez (ex: "a1", "e4").
+application (aplicação):
+
+Program: A classe principal com o método main para rodar o jogo no console.
+UI: Utilitários para a interface do usuário no console.
